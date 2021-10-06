@@ -1,8 +1,10 @@
 package nick.demo.placeorder.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class OrderDiscount {
 
     private DiscountType discountType;
