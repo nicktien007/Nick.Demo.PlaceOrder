@@ -10,13 +10,13 @@ public class HolidayDiscount implements IDiscountPrice{
         DiscountInfo discountInfo = new DiscountInfo();
         switch (discount.getHoliday()){
             case "母親節":
-                int discountAmount = (totalAmount / 1000) * 100;
+                int discountAmount = (totalAmount / 1000) * 100;//滿千送百
                 totalAmount -= discountAmount;
                 discountInfo.setIsNoFreight(false);
                 discountInfo.setTotalAmount(totalAmount);
                 break;
             case "光棍節":
-                discountInfo.setIsNoFreight(true);
+                discountInfo.setIsNoFreight(true);              //免運
                 discountInfo.setTotalAmount(totalAmount);
                 break;
         }

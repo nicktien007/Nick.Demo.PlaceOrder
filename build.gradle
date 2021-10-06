@@ -25,6 +25,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.5'
+    implementation 'com.google.guava:guava:28.1-jre'
 }
 
 test {
